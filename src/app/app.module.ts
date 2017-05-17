@@ -5,14 +5,29 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+//import { InputsModule } from '@progress/kendo-angular-inputs';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LeftPanelComponent } from './left-panel/left-panel.component';
+
+ import { PanelBarModule } from '@progress/kendo-angular-layout';
+
+ import { LayoutModule } from '@progress/kendo-angular-layout';
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LeftPanelComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    BrowserAnimationsModule,
+    ButtonsModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,11 @@
+<kendo-panelbar [items]="items" (stateChange)="onPanelChange($event)">
+            <ng-template kendoPanelBarItemTemplate let-dataItem>
+                <div [class]="'custom-template'">
+                    <h4><span class="glyphicon glyphicon-earphone"></span> Call</h4>
+                    <p>{{dataItem.content}}</p>
+
+                    
+                </div>
+            </ng-template>
+</kendo-panelbar>
+
